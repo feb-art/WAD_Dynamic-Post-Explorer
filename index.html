@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Reading Room</title>
+
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="page-header">
+            <p class="eyebrow">A LITTLE CORNER OF THE INTERNET</p>
+
+            <h1>the reading room</h1>
+
+            <p class="subtitle">
+                Stories, thoughts, and little reminders for the person
+                you're becoming.
+            </p>
+        </header>
+
+        <section class="toolbar">
+            <div>
+                <h2>Collected stories</h2>
+                <p id="status" role="status" aria-live="polite">
+                    Five stories, waiting to be discovered.
+                </p>
+            </div>
+
+            <button id="loadButton" class="button" type="button">
+                Load posts 
+            </button>
+
+            <button id="retryButton" class="button" type="button" hidden>
+                Try again 
+            </button>
+        </section>
+
+        <section id="posts" class="posts-list" aria-label="Articles">
+            <div class="empty-state">
+                <p>take your time.</p>
+                <h2>Your next favorite read might be here.</h2>
+                <p>Click Load Posts to explore the collection.</p>
+            </div>
+        </section>
+
+        <footer>
+            <span>made for slow mornings & quiet nights.</span>
+            <span id="postCount">5 stories in the collection</span>
+        </footer>
+
+    </main>
+</body>
+</html>
